@@ -1,0 +1,15 @@
+INFO train.py(179): n_workers_train: 4
+INFO train.py(180): n_workers_val: 1
+INFO train.py(181): use_boundary_2: False
+INFO train.py(182): use_boundary_4: False
+INFO train.py(183): use_boundary_8: True
+INFO train.py(184): use_boundary_16: False
+INFO train.py(185): mode: train
+INFO train.py(369): it: 50/600000, lr: 0.000014, loss: 4.2696, boundery_bce_loss: 0.8227, boundery_dice_loss: 0.9858, eta: 7 days, 14:09:59, time: 53.5613
+INFO train.py(378): evaluating the model ...
+INFO train.py(379): setup and restore model
+INFO train.py(384): compute the mIOU
+INFO train.py(409): max mIOU model saved to: /project/train/models/model_maxmIOU50.pth
+INFO train.py(417): max mIOU model saved to: /project/train/models/model_maxmIOU75.pth
+INFO train.py(419): mIOU50 is: 0.3918682932853699, mIOU75 is: 0.482765793800354
+INFO train.py(420): maxmIOU50 is: 0.3918682932853699, maxmIOU75 is: 0.482765793800354.
