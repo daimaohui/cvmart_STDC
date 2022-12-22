@@ -288,8 +288,8 @@ class BiSeNet(nn.Module):
         feat_out = F.interpolate(feat_out, (H, W), mode='bilinear', align_corners=True)
         feat_out16 = F.interpolate(feat_out16, (H, W), mode='bilinear', align_corners=True)
         feat_out32 = F.interpolate(feat_out32, (H, W), mode='bilinear', align_corners=True)
-        feat_out = torch.softmax(feat_out, dim=1)
-        feat_out = torch.argmax(feat_out, dim=1)
+        # feat_out = torch.softmax(feat_out, dim=1)
+        # feat_out = torch.argmax(feat_out, dim=1)
         if self.use_boundary_2 and self.use_boundary_4 and self.use_boundary_8:
             return feat_out, feat_out16, feat_out32, feat_out_sp2, feat_out_sp4, feat_out_sp8
         
